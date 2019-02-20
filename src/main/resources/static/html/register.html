@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script type= "text/javascript" src = "../js/countries.js"></script>
+ <script type ="text/javascript" src="../js/main.js"></script>
+ 
+
+<!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Register</title>
+  
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/sb-admin.css" rel="stylesheet">
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+</head>
+
+<body class="bg-dark">
+
+  <div class="container">
+    <div class="card card-register mx-auto mt-5">
+      <div class="card-header">Register an Account</div>
+      <div class="card-body">
+        <form id="registro">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-4">
+                <div class="form-label-group">
+                  <input type="text" name="firstname" id="firstName" class="form-control" placeholder="First name" required="required" autofocus="autofocus">
+                  <label for="firstName">First name</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-label-group">
+                  <input type="text" name="lastname" id="lastName" class="form-control" placeholder="Last name" required="required">
+                  <label for="lastName">Last name</label>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="form-label-group">
+                 <select name="gender"  class="form-control" placeholder="gender" required="required">
+                     <option value="">Gender</option>
+                     <option>Male</option>
+                     <option>Female</option>
+                 </select>
+                </div>
+              </div> 
+
+            </div>
+          </div>
+ 
+          <div class="form-group">
+            <div class="form-row">
+             
+              <div class="col-md-4">
+                <div class="form-label-group">
+                  <input type="text" name="rfc" id="rfc" class="form-control" placeholder="rfc" required="required">
+                  <label for="rfc">RFC</label>
+                </div>
+              </div>
+              
+              <div class="col-md-5">
+                <div class="form-label-group">
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Email" required="required" autofocus="autofocus">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-label-group">
+                  <input type="tel" name="phonenumber" id="phonenumber" class="form-control" placeholder="Phone Number" required="required">
+                  <label for="phonenumber">Phone Number</label>
+                </div>
+              </div>
+              
+
+            </div>
+          </div>         
+
+          <div class="form-group">
+            <div class="form-row">
+
+              
+              <div class="col-md-5">
+                <div class="form-label-group">
+                  <input type="text" id="address" class="form-control" placeholder="Address" required="required">
+                  <label for="address">Address</label>
+                </div>
+              </div>
+              
+               
+              <div class="col-md-4">
+                <div class="form-label-group">
+                 <select name="country" id="country" class="form-control" placeholder="country" required="required">    
+                 </select>
+                </div>
+              </div>
+            
+              <div class="col-md-3">
+                <div class="form-label-group">
+                 <select name="state" id="state" class="form-control" placeholder="state" required="required">
+                    <script>populateCountries("country", "state"); </script>
+                 </select>
+                </div>
+              </div>
+          </div>
+        </div>    
+          
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-4">
+                <div class="form-label-group">
+                  <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
+                  <label for="inputPassword">Password</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-label-group">
+                  <input name="confirmpassword" type="password" id="confirmPassword" class="form-control" placeholder="Confirm password" required="required">
+                  <label for="confirmPassword">Confirm password</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-label-group">
+                  <input type="text" name="gymname" id="gymname" class="form-control" placeholder="Gym Name" required="required">
+                  <label for="gymname">Name of your gym</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <input type="submit" class="btn btn-primary btn-block" value="Send">
+        </form>
+        
+        <div class="text-center">
+          <a class="d-block small mt-3" href="login1.html">Login Page</a>
+          <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  
+
+</body>
+
+</html>
+
+   <!-- Función que obtiene que toma los datos del formulario y los coloca en un JSON 
+<script>    
+    (function ($) {
+        $.fn.formtoJSON = function () {
+
+            var arreglo = {};
+            var input = this.serializeArray();
+            $.each(input, function () {
+                if (arreglo[this.name]) {
+                    if (!arreglo[this.name].push) {
+                        arreglo[this.name] = [arreglo[this.name]];
+                    }
+                    arreglo[this.name].push(this.value || '');
+                } else {
+                    arreglo[this.name] = this.value || '';
+                }
+            });
+            return arreglo;
+        };
+    })(jQuery);
+
+$('form').submit(function (e) {
+    e.preventDefault();
+    var data = $(this).formtoJSON();
+  console.log(data);
+     $.postJSON();
+});
+
+
+</script>-->

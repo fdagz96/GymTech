@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Register an User</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../Nueva%2520carpeta/main.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template-->
+  <link href="../css/sb-admin.css" rel="stylesheet">
+  
+   <!-- icono de pestaña de pagina-->
+  
+  <link rel="icon" href="IMPLEMENTS/img/iconogym.ico">
+
+</head>
+
+<body class=" one" background="IMPLEMENTS/img/class.jpg">
+
+  <div class="container">
+    <div class="card card-register mx-auto mt-5">
+      <div class="card-header">Register an Account</div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <div class="form-label-group">
+                  <input type="text" id="firstName" class="form-control" placeholder="RFC" required="required" autofocus="autofocus">
+                  <label for="firstName">RFC</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-label-group">
+                 <select name="typeuser" id="type" class="form-control" placeholder="Type User" required="required">
+                     <option value="">Type User</option>
+                     <option>Coach</option>
+                     <option>Member Gym</option>
+                 </select>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-label-group">
+                  <input type="date" id="birthdate" class="form-control" placeholder="Birthdate" required="required">
+                  <label for="date">Birthdate</label>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="form-row">
+              <div class="col">
+                <div class="form-label-group">
+                  <input type="text" id="Name" class="form-control" placeholder="Name" required="required" autofocus="autofocus">
+                  <label for="Name">Name</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-label-group">
+                  <input type="text" id="lastName" class="form-control" placeholder="Last name" required="required">
+                  <label for="lastName">Last Name</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-select-group">
+                 <select name="curso"  class="form-control" placeholder="Last name" required="required">
+                     <option value="">Sex</option>
+                     <option>Male</option>
+                     <option>Female</option>
+                 </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+              <div class="col">
+                <div class="form-label-group">
+                  <input type="text" id="Name" class="form-control" placeholder="Address" required="required" autofocus="autofocus">
+                  <label for="Name">Address</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-label-group">
+                  <input type="text" id="lastName" class="form-control" placeholder="State" required="required">
+                  <label for="lastName">State</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-select-group">
+                 <select name="curso"  class="form-control" placeholder="Last name" required="required">
+                     <option value="">Civil Status</option>
+                     <option>Single</option>
+                     <option>Married</option>
+                 </select>
+                </div>
+              </div>
+            </div>
+          <br>
+          
+          <div class="form-row">
+              <div class="col">
+                <div class="form-label-group">
+                  <!--<input type="text" id="Name" class="form-control" placeholder="Address" required="required" autofocus="autofocus">
+                  <label for="Name">Address</label>-->
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-label-group">
+                  <input type="text" id="telhone" class="form-control" placeholder="Telphone" required="required">
+                  <label for="lastName">Telphone</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-select-group">
+                 <!--<select name="curso"  class="form-control" placeholder="Last name" required="required">
+                     <option value="">Civil Status</option>
+                     <option>Single</option>
+                     <option>Married</option>
+                 </select>-->
+                </div>
+              </div>
+            </div>
+          
+          <br>
+          <div class="form-group">
+            <div class="form-label-group">
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required">
+              <label for="inputEmail">Email address</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
+                  <label for="inputPassword">Password</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-label-group">
+                  <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm password" required="required">
+                  <label for="confirmPassword">Confirm password</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary btn-block" id="registrocliente" href="login.html">Register</a>
+        </form>
+        <div class="text-center">
+          <a class="d-block small mt-3" href="login.html">Login Page</a>
+          <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+ <br>
+ 
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.one{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+}
+
+
+
+.row{
+    height: 110px;
+    background-color:black;
+    padding-top: 20px;
+    
+}
+
+
+
+.two{
+    
+    color: aqua;
+    font-size: 15px;
+    text-align:center;
+}
+
+.tree{
+    
+    font-size: 50px;
+    font-weight: 700;
+    color: aqua;
+    
+}
+
+.for{
+  text-align: center;
+  color: black;
+}
+
+.fine{
+   
+  text-align: center;
+  color: black;
+    
+}
+    
